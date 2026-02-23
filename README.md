@@ -15,11 +15,18 @@ displays NASA Astronomy Picture of the Day (APOD).
 
 The solution is structured using Clean Architecture principles:
 
--   **Domain** -- Core entities and business rules
--   **Application** -- Use cases and interfaces
--   **Infrastructure** -- External services (NASA API)
--   **Wpf** -- UI layer (MVVM)
--   **Tests** -- Unit tests
+```
+NasaPhoto/
+│
+├── NasaPhoto_WinApp.Domain
+├── NasaPhoto_WinApp.Application
+├── NasaPhoto_WinApp.Infrastructure
+├── NasaPhoto_WinApp.Wpf
+├── NasaPhoto_WinApp.Tests
+│
+├── Dockerfile
+└── NasaPhoto.sln
+```
 
 ## ▶ How to Run
 
@@ -29,6 +36,10 @@ The solution is structured using Clean Architecture principles:
 
 Or run from published folder:
 
+1. Download the release package
+2. Extract the zip file
+3. Open the folder
+4. Double-click `NasaPhoto_WinApp.Wpf.exe`
     
 
 ## 📦 Features
